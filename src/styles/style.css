@@ -1,11 +1,20 @@
 /** CSS STYLE **/
+@font-face {
+  font-family: Neucha;
+  src: url("../fonts/Neucha.ttf");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/Opensans.ttf");
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   color: #2A2626;
