@@ -1,12 +1,12 @@
 /** CSS STYLE **/
 @font-face {
   font-family: Neucha;
-  src: url("../fonts/Neucha.ttf");
+  src: url("../fonts/Neucha-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url("../fonts/Opensans.ttf");
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf");
 }
 
 html {
