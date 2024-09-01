@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf");
 }
 
@@ -14,10 +14,10 @@ html {
 }
 
 body {
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
-  color: #2A2626;
+  color: #2a2626;
   margin: 0;
 }
 
@@ -25,6 +25,7 @@ body {
   font-family: Neucha, sans-serif;
   font-weight: 500;
 }
+
 .container {
   width: 1110px;
   margin: 0 auto;
@@ -38,7 +39,9 @@ body {
   padding: 100px 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Neucha, sans-serif;
   line-height: 1.2em;
   font-weight: 500;
@@ -84,6 +87,7 @@ h3 {
 .transparent-dark-text {
   color: #908d8b;
 }
+
 .background {
   position: relative;
   overflow: hidden;
@@ -150,7 +154,7 @@ header {
   height: 50px;
   border: none;
   font-weight: bold;
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   position: relative;
@@ -252,7 +256,6 @@ header {
   flex-direction: row;
   position: relative;
   column-gap: 30px;
-/*    margin: auto;*/
   padding-top: 100px;
 }
 
@@ -357,5 +360,3 @@ header {
 .font-14 {
   font-size: 14px;
 }
-
-
