@@ -14,29 +14,35 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open sans', sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   color: #2A2626;
+  margin: 0;
 }
 
 .title {
   font-family: Neucha, sans-serif;
   font-weight: 500;
 }
-
 .container {
-  position: relative;
   width: 1110px;
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 0 auto;
+}
+
+.position {
+  position: relative;
+}
+
+.padding-100 {
+  padding: 100px 0;
 }
 
 h1, h2, h3 {
   font-family: Neucha, sans-serif;
   line-height: 1.2em;
   font-weight: 500;
+  margin: 0;
 }
 
 h1 {
@@ -78,15 +84,16 @@ h3 {
 .transparent-dark-text {
   color: #908d8b;
 }
-
 .background {
   position: relative;
-  overflow: hidden;
+/*    overflow: hidden;*/
 }
 
 .background::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-image: url("../images/background.png");
@@ -95,8 +102,12 @@ h3 {
   opacity: 0.1;
 }
 
+header {
+  box-sizing: border-box;
+}
+
 .mg-top-200 {
-  margin-top: 200px;
+  margin-top: 185px;
 }
 
 .orange-text {
@@ -104,10 +115,9 @@ h3 {
 }
 
 .first-title {
-  display: inline;
   font-size: 72px;
   position: relative;
-  z-index: 9999;
+  margin-bottom: 200px;
 }
 
 .first-img {
@@ -127,13 +137,15 @@ h3 {
 
 .flex-element {
   width: 540px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header-button {
-  margin-top: 40px;
+  margin-top: 26px;
   background-color: #fe8a02;
   color: white;
-  width: 150px;
+  width: 148px;
   height: 50px;
   border: none;
   font-weight: bold;
@@ -142,42 +154,40 @@ h3 {
   line-height: 1.6em;
   position: relative;
   z-index: 9999;
+  padding: 0;
 }
 
 .header-button:hover {
   background-color: #ea7600;
 }
 
-#preview-image {
-  text-align: center;
-  padding: 1px;
-}
-
 .second-title {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .preview-title {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .video-preview {
+  display: block;
+  text-align: center;
   width: 919px;
   height: 517px;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
   position: relative;
   z-index: 9999;
-}
-
-#navigation {
-  height: 820px;
+  margin: auto;
 }
 
 .nav {
   position: relative;
   top: -200px;
-  padding-top: 100px;
-  padding-bottom: 1px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  margin-bottom: -200px;
 }
 
 .nav-button {
@@ -239,9 +249,10 @@ h3 {
 .flex-img-title {
   display: flex;
   flex-direction: row;
+  position: relative;
   column-gap: 30px;
-  margin: auto;
-  margin-top: 100px;
+/*    margin: auto;*/
+  padding-top: 100px;
 }
 
 .image-article {
@@ -258,7 +269,7 @@ h3 {
 }
 
 .title-article {
-  margin-top: 12px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -266,15 +277,17 @@ h3 {
   font-family: Neucha, sans-serif;
   line-height: 1.2em;
   font-weight: 500;
-  margin-top: 16px;
+  margin-top: 30px;
 }
 
 .sub-title {
   margin-top: 100px;
   margin-bottom: 20px;
   font-size: 14px;
-  font-weight: bold;
-  padding-left: 6px;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .flex-article {
@@ -283,6 +296,8 @@ h3 {
   width: 1110px;
   justify-content: space-between;
   column-gap: 30px;
+  margin-top: 0;
+  padding-bottom: 100px;
 }
 
 .flex-footer {
@@ -290,9 +305,12 @@ h3 {
   flex-direction: row;
   flex-grow: 0;
   justify-content: space-between;
-  padding-left: 55px;
-  padding-right: 55px;
+  padding: 40px 55px;
   box-sizing: border-box;
+}
+
+.footer-title {
+  margin-top: 10px;
 }
 
 .input-name {
@@ -316,11 +334,14 @@ h3 {
 
 .footer-form-title {
   margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 18px;
 }
 
 .footer-info-agreement {
   font-size: 12px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .rules {
