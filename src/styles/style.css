@@ -86,7 +86,7 @@ h3 {
 }
 .background {
   position: relative;
-/*    overflow: hidden;*/
+  overflow: hidden;
 }
 
 .background::before {
@@ -118,6 +118,7 @@ header {
   font-size: 72px;
   position: relative;
   margin-bottom: 200px;
+  z-index: 9998;
 }
 
 .first-img {
@@ -218,7 +219,7 @@ header {
 
 .flex-container {
   width: 350px;
-  height: 350px;
+  height: 340px;
   box-sizing: border-box;
 }
 
